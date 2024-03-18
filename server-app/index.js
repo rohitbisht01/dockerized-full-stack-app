@@ -9,10 +9,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    data: {
-      name: "rohit",
-      age: 23,
-    },
+    message: "Backend Running successfully 🚀",
   });
 });
 
