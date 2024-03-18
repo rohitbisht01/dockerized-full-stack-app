@@ -22,4 +22,3 @@ services:
     container_name: rohit-backend
     ports:
       - "4000:4000"
-    env_file: ./server-app/.env
