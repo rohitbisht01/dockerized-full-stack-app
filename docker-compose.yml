@@ -1,6 +1,16 @@
 version: "1.0"
 
 services:
+  # backend:
+  server:
+    build:
+      context: ./server-app
+      dockerfile: Dockerfile
+
+    container_name: rohit-backend
+    ports:
+      - "4000:4000"
+
   # react-app
   client:
     build:
@@ -12,13 +22,3 @@ services:
       - "3000:3000"
     depends_on:
       - server
-
-  # backend:
-  server:
-    build:
-      context: ./server-app
-      dockerfile: Dockerfile
-
-    container_name: rohit-backend
-    ports:
-      - "4000:4000"

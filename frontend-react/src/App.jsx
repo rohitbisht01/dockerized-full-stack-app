@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
+import { url } from "./network";
 
 function App() {
   const [info, setInfo] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get(`http://localhost:4000/test`);
+    const response = await axios.get(`${url}/test`);
     setInfo(response.data.data);
   };
 
