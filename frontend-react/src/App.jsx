@@ -9,6 +9,7 @@ function App() {
   const fetchData = async () => {
     const response = await axios.get(`${url}/info`);
     setInfo(response.data.data);
+    console.log(response.data.data);
   };
 
   useEffect(() => {
