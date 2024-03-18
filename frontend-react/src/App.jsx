@@ -18,9 +18,7 @@ function App() {
   return (
     <div>
       <h1>REACT FULL STACK APPLICATION</h1>
-      <div>
-        {info.name} - {info.age}
-      </div>
+      <div>{info}</div>
     </div>
   );
 }
