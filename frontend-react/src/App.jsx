@@ -7,8 +7,8 @@ function App() {
   const [info, setInfo] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get(`${url}/test`);
-    setInfo(response.data.data);
+    const response = await axios.get(`${url}/`);
+    setInfo(response.data);
   };
 
   useEffect(() => {
